@@ -1,0 +1,23 @@
+{
+  "name": "web_dev_1",
+  "version": "1.0.0",
+  "description": "This is our first laboratory exercise  for our subject Web development(SE 2134)",
+  "main": "debt.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext js,jsx,ts,tsx --fix"
+  },
+  "author": "Teddie John Rajeev",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/readline-sync": "^1.4.4"
+  }
+}
