@@ -1,0 +1,5 @@
+Goku 100
+Vegeta 150
+Krillin 200
+Piccolo 500
+Freiza 407
