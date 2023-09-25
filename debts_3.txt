@@ -1,0 +1,4 @@
+Musk 30000000
+Bezos 5000000
+Zuckerberg 200000
+Gates 10000000
