@@ -3,3 +3,4 @@ Vegeta 150
 Krillin 200
 Piccolo 500
 Freiza 407
+Cell 45

@@ -7,11 +7,9 @@ function isNumber(value: number) {
   return !Number.isNaN(value);
 }
 
-function callAfterWritingFile(error: NodeJS.ErrnoException | null, result) {
+function callAfterWritingFile(error: NodeJS.ErrnoException | null) {
   if (error) {
     console.log('Something went wrong writing the files:', error.message);
-  } else {
-    console.log('Result of writing to file: ', result);
   }
 }
 
@@ -33,16 +31,16 @@ while (true) {
   const amount = Number(amountAsString);
 
   if (isNumber(amount)) {
-    fs.writeFile(FILENAME, input + '\n', { flag: 'a+' }, (error) => callAfterWritingFile(error, input));
+    fs.writeFile(FILENAME, input + '\n', { flag: 'a+' }, callAfterWritingFile);
   } else {
     console.log('Amount is not a number');
   }
 }
 
-async function displayDebtors() {
+function displayDebtors() {
   console.log('-'.repeat(100));
   console.log('Here are our debtors!');
-  await fs.readFile(FILENAME, (error, debt) => {
+  fs.readFile(FILENAME, (error, debt) => {
     if (error) {
       console.log(error);
     }
